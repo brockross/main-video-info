@@ -3,9 +3,6 @@ import styled from 'styled-components'
 
 const Stars = styled.span`
   font-size: 1.55em;
-  ${Stars}:hover {
-    color: #bca201;
-  }
 `;
 
 const OrangeStar = styled.span`

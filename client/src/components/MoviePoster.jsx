@@ -3,7 +3,7 @@ import styled from 'styled-components';
 // styled components
 const PosterImage = styled.img`
   height: 99.75%;
-  width: 50%;
+  max-width: 100%;
   opacity: 1;
   transition: opacity .25s, transform .25s ease;
   :hover {

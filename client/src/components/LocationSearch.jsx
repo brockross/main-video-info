@@ -15,7 +15,7 @@ const Heading = styled.h3`
   margin: 0;
   color: inherit;
   line-height: 1.5;
-  font-size: 2.85em;
+  font-size: 2.65em;
   font-family: Alternate Gothic No1 D;
   vertical-align: middle;
   letter-spacing: 1px;
@@ -24,7 +24,7 @@ const Heading = styled.h3`
 
 const Message = styled.p`
   font-family: Proxima Nova;
-  font-size: 1.1em;
+  font-size: 1em;
 `;
 
 const MessageWrapper = styled.div`
@@ -49,7 +49,7 @@ const Directions = styled.span`
 
 const Search = styled.input`
   height: 4.3vh;
-  width: 15vw;
+  width: 265px;
   margin-top: 1.3vh;
   padding: 0 0 0 1vw;
   font-size: 1.25em;

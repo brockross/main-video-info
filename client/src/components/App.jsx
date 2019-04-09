@@ -20,6 +20,7 @@ const MovieWrapper = styled.div`
 `;
 const ContentWrapper = styled.div`
   margin: 0 0 0 8vw;
+  width: 400px;
 `;
 
 class App extends React.Component {
@@ -147,7 +148,8 @@ class App extends React.Component {
     const Container = styled.section`
       background: #262626;
       height: ${this.state.locationSearched ? '77vh' : '70vh'};
-      width: ${this.state.locationSearched ? '24vw' : '22vw'};
+      // width: ${this.state.locationSearched ? '24vw' : '22vw'};
+      width: ${this.state.locationSearched ? '385px' : '395px'};
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-rows: 47.5% 5% 47.5%;
@@ -157,8 +159,9 @@ class App extends React.Component {
       return (
         <div>
           <AppNavbar></AppNavbar>
+          <MovieNavbar movie={this.state.movieInfo}></MovieNavbar>
           <ContentWrapper>
-            <MovieNavbar movie={this.state.movieInfo}></MovieNavbar>
+            {/* <MovieNavbar movie={this.state.movieInfo}></MovieNavbar> */}
             <Container>
 
               <PosterWrapper>
@@ -181,8 +184,8 @@ class App extends React.Component {
       return (
         <div>
           <AppNavbar></AppNavbar>
+          <MovieNavbar movie={this.state.movieInfo}></MovieNavbar>
           <ContentWrapper>
-            <MovieNavbar movie={this.state.movieInfo}></MovieNavbar>
             <Container>
 
               <PosterWrapper>

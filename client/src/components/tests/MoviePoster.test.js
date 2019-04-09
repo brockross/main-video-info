@@ -9,11 +9,10 @@ import styled from 'styled-components';
 describe("MoviePoster component", () => {
 
   it("should render correctly", () => {
-    // const wrapper = shallow(<MoviePoster />);
+    const wrapper = shallow(<MoviePoster />);
 
-    // expect(wrapper.exists()).toBe(true);
-    const tree = renderer.create(<MoviePoster></MoviePoster>).toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(wrapper.exists()).toBe(true);
+
   });
 
   it('applies correct styles to div containing poster', () => {

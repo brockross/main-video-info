@@ -8,6 +8,10 @@ const NavWrapper = styled.div`
   // background: rgba(76, 76, 76, 0.5);
   font-family: Alternate Gothic No1 D;
   clear: both;
+  margin-left: 8vw;
+  @media screen and (max-width: 600px) {
+    display: block;
+  }
 `;
 
 const MovieTitle = styled.h1`

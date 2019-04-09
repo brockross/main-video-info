@@ -102,6 +102,14 @@ const SearchButton = styled.a`
   }
 `;
 
+const Links = styled.span`
+  @media screen and (max-width: 600px) {
+    display: none;
+
+  }
+
+`;
+
 const Arrow = styled.span`
   color: #f15500;
 `;
@@ -116,14 +124,18 @@ const AppNavbar = (props) => {
             <Logo src="https://s3.us-east-2.amazonaws.com/fec-hrr37-brian/fandango.png" alt="Logo"/>
             <AppTitle href="#">Fandangit</AppTitle>
           </ListItem>
-          <ListItem>
-            <SearchBar placeholder="Enter City + State, ZIP Code, or Movie" type="text"></SearchBar>
-            <SearchButton href="#">GO</SearchButton>
-          </ListItem>
-          <ListItem>Movies <Arrow className="fas fa-caret-down"/></ListItem>
-          <ListItem>Movie Times + Tickets <Arrow className="fas fa-caret-down"/></ListItem>
-          <ListItem>Movie News <Arrow className="fas fa-caret-down"/></ListItem>
-          <ListItem>Join Fandangit<Arrow>VIP</Arrow><Arrow className="fas fa-caret-down"/></ListItem>
+          <Links>
+            <ListItem>
+              <SearchBar placeholder="Enter City + State, ZIP Code, or Movie" type="text"></SearchBar>
+              <SearchButton href="#">GO</SearchButton>
+            </ListItem>
+
+            <ListItem>Movies <Arrow className="fas fa-caret-down"/></ListItem>
+            <ListItem>Movie Times + Tickets <Arrow className="fas fa-caret-down"/></ListItem>
+            <ListItem>Movie News <Arrow className="fas fa-caret-down"/></ListItem>
+            <ListItem>Join Fandangit<Arrow>VIP</Arrow><Arrow className="fas fa-caret-down"/></  ListItem>
+          </Links>
+
         </NavList>
 
     </NavWrapper>
