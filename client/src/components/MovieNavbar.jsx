@@ -42,7 +42,7 @@ const NavItem = styled.li`
   }
 `;
 
-const HeartIcon = styled.h1`
+const HeartIcon = styled.p`
   font-family: Proxima Nova;
   font-size: 0.75em;
   margin: 0;
@@ -60,7 +60,7 @@ const MovieNavbar = (props) => {
 
   return (
     <NavWrapper>
-      <MovieTitle>{props.movie.info.name} ({props.movie.info.releaseYear})  <HeartIcon> <i class="far fa-heart"></i></HeartIcon></MovieTitle>
+      <MovieTitle>{props.movie.info.name} ({props.movie.info.releaseYear})  <HeartIcon> <i className="far fa-heart"></i></HeartIcon></MovieTitle>
       <Nav>
         <NavItem>Overview</NavItem>
         <NavItem>Movie Times + Tickets</NavItem>

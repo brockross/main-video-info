@@ -10,6 +10,11 @@ app.use(bodyParser.urlencoded( { extended: true } ))
 app.use(bodyParser.json())
 app.use(cors());
 
+app.use((req, res, next) => {
+  console.log(`serving a ${req.method} request to url ${req.url}.`);
+  next();
+})
+
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 })

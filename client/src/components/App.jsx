@@ -42,7 +42,7 @@ class App extends React.Component {
 
   // get poster image associated with selected movie
   getMoviePoster(id) {
-    fetch(`movies/poster?movieID=${id}`)
+    fetch(`http://localhost:2000/movies/poster?movieID=${id}`)
       .then(res => res.json())
       .then(
         result => {
@@ -57,7 +57,7 @@ class App extends React.Component {
   }
   // get correct movie info
   getMovieInfo(id) {
-    fetch(`/movies?movieID=${id}`)
+    fetch(`http://localhost:2000/movies?movieID=${id}`)
       .then(res => res.json())
       .then(
         result => {
