@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 // styled components
-const PosterImage = styled.img`
+const PosterImage = window.styled.img`
   height: 99.75%;
   max-width: 100%;
   opacity: 1;
@@ -12,7 +12,7 @@ const PosterImage = styled.img`
   }
 `;
 
-const PosterDiv = styled.div`
+const PosterDiv = window.styled.div`
   position: relative;
   display: inline-block;
   overflow: hidden;

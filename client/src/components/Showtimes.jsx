@@ -1,12 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 // STYLED COMPONENTS
-const ShowtimeButton = styled.a`
+const ShowtimeButton = window.styled.a`
   display: inline-block;
   margin-top: 1vh;
   background: #f15500;
-  border-radius 5px;
+  border-radius: 5px;
   color: white;
   text-align: center;
   font-family: ProximaNovaW01-Bold, Helvetica;

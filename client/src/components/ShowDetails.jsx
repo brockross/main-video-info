@@ -1,8 +1,8 @@
 import React from 'react';
 import Showtimes from './Showtimes.jsx'
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
-const TheaterName = styled.a`
+const TheaterName = window.styled.a`
   text-decoration: none;
   text-transform: uppercase;
   font-family: ProximaNovaW01-Bold, Helvetica;
@@ -15,26 +15,26 @@ const TheaterName = styled.a`
   }
 `;
 
-const Subheading = styled.div`
+const Subheading = window.styled.div`
   color: #ccc;
   font-family: Proxima Nova, Helvetica;
   font-size: 1em;
 `;
 
-const SeatingAmenitiesList = styled.ul`
+const SeatingAmenitiesList = window.styled.ul`
   font-family: Proxima Nova, Helvetica;
   margin-top: 1.5vh;
   margin-bottom: .75vh;
   padding: inherit;
 `;
 
-const AmenitiesItem = styled.li`
+const AmenitiesItem = window.styled.li`
   display: inline-block;
   margin-right: 5px;
   line-height: 1.6;
 `;
 
-const SeeAll = styled.a`
+const SeeAll = window.styled.a`
   display: block;
   margin-top: 1.75vh;
   margin-bottom: 1.75vh;

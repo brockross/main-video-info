@@ -1,9 +1,9 @@
 import React from 'react';
 import ShowDetails from './ShowDetails.jsx';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 // STYLED COMPONENTS
-const ShowtimeContainer = styled.div`
+const ShowtimeContainer = window.styled.div`
   grid-column: 1 / 3;
   color: #ccc;
   background: rgba(51, 51, 51, .75);
@@ -12,7 +12,7 @@ const ShowtimeContainer = styled.div`
   border: none;
 `;
 
-const Heading = styled.h3`
+const Heading = window.styled.h3`
   display: inline-block;
   margin-top: 0.5vh;
   margin-bottom: 1vh;
@@ -23,7 +23,7 @@ const Heading = styled.h3`
   font-weight: 400;
 `;
 
-const Ticket = styled.span`
+const Ticket = window.styled.span`
   font-size: 2.65em;
   color: white;
   transform: rotate(-13deg);

@@ -1,11 +1,11 @@
 import React from 'react';
-import styled from 'styled-components'
+// import styled from 'styled-components'
 
-const Stars = styled.span`
+const Stars = window.styled.span`
   font-size: 1.55em;
 `;
 
-const OrangeStar = styled.span`
+const OrangeStar = window.styled.span`
   letter-spacing: 1px;
   color: #f15500;
   :hover {
@@ -13,7 +13,7 @@ const OrangeStar = styled.span`
   }
 `;
 
-const EmptyStar = styled.span`
+const EmptyStar = window.styled.span`
   color: #999999;
 `;
 

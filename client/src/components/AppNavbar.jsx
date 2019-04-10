@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
-const NavWrapper = styled.div`
+const NavWrapper = window.styled.div`
   display: grid;
   grid-template-columns: 1.75fr 4fr 1fr;
   grid-template-rows: 1fr;
@@ -15,7 +15,7 @@ const NavWrapper = styled.div`
   margin-bottom: 10px;
 `;
 
-const NavList = styled.ul`
+const NavList = window.styled.ul`
   grid-column: 1 / 4;
   grid-row: 1 / 2;
   list-style: none;
@@ -30,7 +30,7 @@ const NavList = styled.ul`
   margin: 0 0 0 6vw;
 `;
 
-const AppTitle = styled.a`
+const AppTitle = window.styled.a`
   font-family: ProximaNovaW01-Bold, Helvetica;
   font-size: 2.25em;
   color: #4AA7F6;
@@ -39,13 +39,13 @@ const AppTitle = styled.a`
   vertical-align: top;
   margin-left: 0.85vw;
 `;
-const Logo = styled.img`
+const Logo = window.styled.img`
   height: 4.65vh;
   width: 40px;
   margin-top: 1.2vh;
 `;
 
-const ListItem = styled.li`
+const ListItem = window.styled.li`
   display: inline-block;
   float: left;
   margin-right: 1vw;
@@ -58,7 +58,7 @@ const ListItem = styled.li`
   }
 `;
 
-const SearchBar = styled.input`
+const SearchBar = window.styled.input`
   height: 4vh;
   width: 15vw;
   grid-column: 2 / 4;
@@ -80,7 +80,7 @@ const SearchBar = styled.input`
   }
 `;
 
-const SearchButton = styled.a`
+const SearchButton = window.styled.a`
   display: inline-block;
   text-decoration: none;
   text-align: center;
@@ -102,7 +102,7 @@ const SearchButton = styled.a`
   }
 `;
 
-const Links = styled.span`
+const Links = window.styled.span`
   @media screen and (max-width: 600px) {
     display: none;
 
@@ -110,7 +110,7 @@ const Links = styled.span`
 
 `;
 
-const Arrow = styled.span`
+const Arrow = window.styled.span`
   color: #f15500;
 `;
 

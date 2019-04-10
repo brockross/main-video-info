@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import {MovieInfo} from './MovieInfo.jsx';
 import {MoviePoster} from './MoviePoster.jsx';
 import Options from './Options.jsx';
@@ -10,15 +10,15 @@ import AppNavbar from './AppNavbar.jsx';
 import API_KEY from '../../key';
 
 // styled components below
-const PosterWrapper = styled.div`
+const PosterWrapper = window.styled.div`
   grid-column: 1 / 3;
   grid-row: 1 / 2;
 `;
-const MovieWrapper = styled.div`
+const MovieWrapper = window.styled.div`
   grid-column: 2 / 3;
   grid-row: 1 / 3;
 `;
-const ContentWrapper = styled.div`
+const ContentWrapper = window.styled.div`
   margin: 0 0 0 8vw;
   width: 400px;
 `;

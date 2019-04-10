@@ -1,8 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 // STYLED COMPONENTS
-const LocationContainer = styled.div`
+const LocationContainer = window.styled.div`
   grid-column: 1 / 3;
   color: #ccc;
   background: rgba(51, 51, 51, .75);
@@ -11,7 +11,7 @@ const LocationContainer = styled.div`
   border: none;
 `;
 
-const Heading = styled.h3`
+const Heading = window.styled.h3`
   margin: 0;
   color: inherit;
   line-height: 1.5;
@@ -22,23 +22,23 @@ const Heading = styled.h3`
   font-weight: 400;
 `;
 
-const Message = styled.p`
+const Message = window.styled.p`
   font-family: Proxima Nova;
   font-size: 1em;
 `;
 
-const MessageWrapper = styled.div`
+const MessageWrapper = window.styled.div`
   margin-bottom: 1vh;
-  margin-top 1.75vh;
+  margin-top: 1.75vh;
 `;
 
-const IconArrow = styled.span`
+const IconArrow = window.styled.span`
   color: white;
   margin-right: 1.4vw;
   font-size: 0.8em;
 `;
 
-const Directions = styled.span`
+const Directions = window.styled.span`
   font-family: Proxima Nova;
   display: block;
   font-weight: 400;
@@ -47,7 +47,7 @@ const Directions = styled.span`
   font-size: 1.2em;
 `;
 
-const Search = styled.input`
+const Search = window.styled.input`
   height: 4.3vh;
   width: 265px;
   margin-top: 1.3vh;

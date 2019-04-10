@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
-const NavWrapper = styled.div`
+const NavWrapper = window.styled.div`
   display: grid;
   grid-template-columns: 3.5fr 1fr;
   grid-template-rows: 0.75fr 0.45fr;
@@ -14,14 +14,14 @@ const NavWrapper = styled.div`
   }
 `;
 
-const MovieTitle = styled.h1`
+const MovieTitle = window.styled.h1`
   color: white;
   text-transform: uppercase;
   font-size: 3.5em;
   margin: 0;
   padding-bottom: 0.5vh;
 `;
-const Nav = styled.ul`
+const Nav = window.styled.ul`
   grid-column: 1 / 3;
   grid-row: 2 / 3;
   padding: 0;
@@ -34,7 +34,7 @@ const Nav = styled.ul`
   }
 `;
 
-const NavItem = styled.li`
+const NavItem = window.styled.li`
   float: left;
   margin-right: 3.5vw;
   font-size: 1.1em;
@@ -46,7 +46,7 @@ const NavItem = styled.li`
   }
 `;
 
-const HeartIcon = styled.p`
+const HeartIcon = window.styled.p`
   font-family: Proxima Nova;
   font-size: 0.75em;
   margin: 0;
@@ -55,7 +55,7 @@ const HeartIcon = styled.p`
   display: inline-block;
 `;
 
-const ArrowIcon = styled.span`
+const ArrowIcon = window.styled.span`
   color: #f15500;
 `;
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
-const FanRatingWrapper = styled.div`
+const FanRatingWrapper = window.styled.div`
   font-family: "Times New Roman";
   font-style: italic;
   color: white;
@@ -9,14 +9,14 @@ const FanRatingWrapper = styled.div`
   padding-top: 0.5vh;
 `;
 
-const ScoreContainer = styled.div`
+const ScoreContainer = window.styled.div`
   display: grid;
   grid-template-columns: 15% 35% 35% 15%;
   grid-template-rows: 75% 25%;
   margin-top: 1em;
 `;
 
-const Percentage = styled.span`
+const Percentage = window.styled.span`
   grid-column: 3 / 5;
   color: white;
   font-family: ProximaNovaW01-Bold;
@@ -25,12 +25,12 @@ const Percentage = styled.span`
   padding-left: 0.1vw;
 `;
 
-const Image = styled.span`
+const Image = window.styled.span`
   grid-column: 1 / 3;
   margin-left: auto;
 `;
 
-const Branding = styled.span`
+const Branding = window.styled.span`
   color: white;
   font-family: "Times New Roman", serif;
   font-style: italic;
