@@ -43,7 +43,14 @@ class App extends React.Component {
 
   // get poster image associated with selected movie
   getMoviePoster(id) {
-    fetch(`http://localhost:2000/movies/poster?movieID=${id}`)
+    let urlID = window.location.pathname
+    .split('')
+    .filter((char) => {
+      return !isNaN(char);
+    })
+    .join('');
+
+    fetch(`http://localhost:2000/movies/poster?movieID=${urlID}`)
       .then(res => res.json())
       .then(
         result => {
@@ -58,7 +65,14 @@ class App extends React.Component {
   }
   // get correct movie info
   getMovieInfo(id) {
-    fetch(`http://localhost:2000/movies?movieID=${id}`)
+    let urlID = window.location.pathname
+    .split('')
+    .filter((char) => {
+      return !isNaN(char);
+    })
+    .join('');
+
+    fetch(`http://localhost:2000/movies?movieID=${urlID}`)
       .then(res => res.json())
       .then(
         result => {
