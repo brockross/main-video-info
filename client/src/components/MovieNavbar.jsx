@@ -9,6 +9,7 @@ const NavWrapper = window.styled.div`
   font-family: Alternate Gothic No1 D;
   clear: both;
   margin-left: 8vw;
+  margin-bottom: 1vh;
   @media screen and (max-width: 600px) {
     display: block;
   }

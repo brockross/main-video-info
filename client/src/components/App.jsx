@@ -145,7 +145,7 @@ class App extends React.Component {
   render() {
     // move App container component here to utilize state
     // if 'GO' clicked: make container slightly bigger
-    const Container = styled.section`
+    const Container = window.styled.section`
       background: #262626;
       height: ${this.state.locationSearched ? '77vh' : '70vh'};
 
@@ -158,7 +158,6 @@ class App extends React.Component {
     if (this.state.movieInfo && !this.state.locationSearched) {
       return (
         <div>
-          <AppNavbar></AppNavbar>
           <MovieNavbar movie={this.state.movieInfo}></MovieNavbar>
           <ContentWrapper>
             {/* <MovieNavbar movie={this.state.movieInfo}></MovieNavbar> */}
@@ -183,7 +182,6 @@ class App extends React.Component {
     } else if (this.state.movieInfo && this.state.locationSearched && this.state.showtimeInfo) {
       return (
         <div>
-          <AppNavbar></AppNavbar>
           <MovieNavbar movie={this.state.movieInfo}></MovieNavbar>
           <ContentWrapper>
             <Container>

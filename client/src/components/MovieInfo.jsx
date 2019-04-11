@@ -17,7 +17,7 @@ const InfoList = window.styled.li`
 const InfoContainer = window.styled.ul`
   text-align: center;
   list-style-type: none;
-  line-height: 1.4;
+  line-height: 1.1;
   padding: 0.75em 0 0.8em 0;
 `;
 const StarRatingContainer = window.styled.div`
