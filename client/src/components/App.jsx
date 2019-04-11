@@ -37,12 +37,12 @@ class App extends React.Component {
 
   // fetch movie poster on mount
   componentDidMount() {
-    this.getMoviePoster(this.state.movieId);
-    this.getMovieInfo(this.state.movieId);
+    this.getMoviePoster();
+    this.getMovieInfo();
   }
 
   // get poster image associated with selected movie
-  getMoviePoster(id) {
+  getMoviePoster() {
     let urlID = window.location.pathname
     .split('')
     .filter((char) => {
@@ -64,7 +64,7 @@ class App extends React.Component {
     )
   }
   // get correct movie info
-  getMovieInfo(id) {
+  getMovieInfo() {
     let urlID = window.location.pathname
     .split('')
     .filter((char) => {
