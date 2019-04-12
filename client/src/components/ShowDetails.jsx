@@ -1,13 +1,8 @@
 import React from 'react';
 import Popup from 'reactjs-popup';
 import Showtimes from './Showtimes.jsx'
-<<<<<<< HEAD
-// import styled from 'styled-components';
-
-=======
 
 
->>>>>>> a1965bf8f8d756ecd9f49bbd2b2678e8be298756
 const TheaterName = window.styled.a`
   text-decoration: none;
   text-transform: uppercase;
