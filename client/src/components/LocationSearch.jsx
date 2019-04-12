@@ -113,7 +113,10 @@ class LocationSearch extends React.Component {
         <Directions>ENTER CITY, STATE OR ZIP CODE</Directions>
 
         <Search placeholder="City, State or Zip Code" type="text"></Search>
-        <Button href="#" onClick={() => this.props.handleSearch()}>GO</Button>
+        <Button onClick={(e) => {
+          this.props.handleSearch(e)}
+          }>GO</Button>
+
 
       </LocationContainer>
     )

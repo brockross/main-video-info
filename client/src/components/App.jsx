@@ -50,7 +50,7 @@ class App extends React.Component {
     })
     .join('');
 
-    fetch(`http://localhost:2000/movies/poster?movieID=${urlID}`)
+    fetch(`http://localhost:2000/movies/poster?movieID=${urlID || 1}`)
       .then(res => res.json())
       .then(
         result => {
@@ -72,7 +72,7 @@ class App extends React.Component {
     })
     .join('');
 
-    fetch(`http://localhost:2000/movies?movieID=${urlID}`)
+    fetch(`http://localhost:2000/movies?movieID=${urlID || 1}`)
       .then(res => res.json())
       .then(
         result => {
@@ -86,7 +86,8 @@ class App extends React.Component {
       )
   }
   // change state if search is activated
-  changeLocationSearchStatus() {
+  changeLocationSearchStatus(e) {
+    e.preventDefault();
     this.setState({
       locationSearched: true
     });

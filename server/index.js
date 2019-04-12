@@ -5,10 +5,11 @@ const db = require('../db/index.js');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
+app.use(cors());
 app.use(express.static('client/dist'))
 app.use(bodyParser.urlencoded( { extended: true } ))
 app.use(bodyParser.json())
-app.use(cors());
+
 
 app.use((req, res, next) => {
   console.log(`serving a ${req.method} request to url ${req.url}.`);
