@@ -1,5 +1,8 @@
 import React from 'react';
+<<<<<<< HEAD
 // import styled from 'styled-components'
+=======
+>>>>>>> a1965bf8f8d756ecd9f49bbd2b2678e8be298756
 
 const Stars = window.styled.span`
   font-size: 1.55em;

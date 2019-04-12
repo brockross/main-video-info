@@ -1,6 +1,11 @@
 import React from 'react';
+<<<<<<< HEAD
 // import styled from 'styled-components';
 
+=======
+
+
+>>>>>>> a1965bf8f8d756ecd9f49bbd2b2678e8be298756
 const FanRatingWrapper = window.styled.div`
   font-family: "Times New Roman";
   font-style: italic;
@@ -43,6 +48,7 @@ const Branding = window.styled.span`
 
 
 const FanRating = (props) => {
+  
   let percentageScore = Math.floor(Math.random() * 100);
   if (percentageScore >= 65) {
     return (

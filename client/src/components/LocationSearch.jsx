@@ -67,7 +67,7 @@ const Search = window.styled.input`
   }
 `;
 
-const Button = styled.a`
+const Button = window.styled.a`
   display: inline-block;
   text-decoration: none;
   text-align: center;

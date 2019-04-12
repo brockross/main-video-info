@@ -17,8 +17,8 @@ const InfoList = window.styled.li`
 const InfoContainer = window.styled.ul`
   text-align: center;
   list-style-type: none;
-  line-height: 1.1;
-  padding: 0.75em 0 0.8em 0;
+  line-height: 1.4;
+  padding: 0.75em 0 0.75em 0;
 `;
 const StarRatingContainer = window.styled.div`
   grid-column: 2 / 3;
@@ -40,6 +40,10 @@ class MovieInfo extends React.Component {
     return formattedTime;
   }
 
+  shouldComponentUpdate(nextProps, nextState) {
+    return false;
+  }
+
   render() {
     // if (!this.props.info) {
     //   return (<div></div>)
@@ -59,8 +63,7 @@ class MovieInfo extends React.Component {
           <InfoList>
             {this.props.info.info.genre}
           </InfoList>
-          {/* <Ratings rating={this.props.info.info.score}
-          widgetRatedColors="#f15500" widgetEmptyColors="#999999"  widgetDimensions="1.47em" widgetSpacings="0.15em" widgetHoverColors="black"> */}
+
         </InfoContainer>
 
         {/* ratings */}
@@ -68,7 +71,7 @@ class MovieInfo extends React.Component {
           <StarRating score={this.props.info.info.score}/>
         </StarRatingContainer>
 
-        <FanRating>
+        <FanRating change={this.props.change}>
         </FanRating>
       </div>
     );
